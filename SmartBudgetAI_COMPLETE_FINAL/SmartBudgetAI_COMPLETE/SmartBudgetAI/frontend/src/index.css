@@ -1,0 +1,4 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{font-family:Inter,system-ui,sans-serif;background:#f5f7fb;color:#172033} body{margin:0}.card{background:white;border:1px solid #e6e9ef;border-radius:18px;padding:20px;box-shadow:0 5px 20px rgba(20,30,50,.05)}

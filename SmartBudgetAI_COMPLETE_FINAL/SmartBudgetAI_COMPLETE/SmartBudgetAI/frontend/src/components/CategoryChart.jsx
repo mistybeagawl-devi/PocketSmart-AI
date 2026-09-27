@@ -1,0 +1,2 @@
+import {PieChart,Pie,Cell,Tooltip,ResponsiveContainer} from 'recharts';
+export default function CategoryChart({categories}){const data=Object.entries(categories||{}).map(([name,value])=>({name,value}));return <div className="card"><h2 className="font-bold text-lg">Expense Categories</h2><div className="h-64"><ResponsiveContainer><PieChart><Pie data={data} dataKey="value" nameKey="name" outerRadius={90} label>{data.map((_,i)=><Cell key={i}/>)}</Pie><Tooltip/></PieChart></ResponsiveContainer></div></div>}
